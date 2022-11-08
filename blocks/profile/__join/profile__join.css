@@ -1,0 +1,13 @@
+.profile__join {
+    justify-self: center;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:900px) {
+    .profile__join {
+        margin-bottom: 22px;
+    }
+}

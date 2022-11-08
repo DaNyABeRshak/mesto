@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./pages/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mesto</title>
+    </head>
+    <body class="root">
+
+        <header class="header section">
+            <img class="header__logo" src="./images/logo.svg" alt="Портрет
+                Жак-Ива Кусто">
+        </header>
+
+        <main class="section">
+
+            <section class="profile section__profile">
+                <div class="profile__join">
+                    <img class="profile__avatar" src="./images/avatar.jpg"
+                        alt="Ваша фотография">
+                </div>
+
+                <div class="profile__info">
+                    <h1 class="profile__author">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit-button buttons"></button>
+                    <p class="profile__author-status">Исследователь океана</p>
+                </div>
+                <button type="button" class="profile__add-button buttons"></button>
+            </section>
+
+            <section class="elements">
+                <ul class="elements__list">
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/Karachaevsk.png" alt="Фотография
+                            карачаевска">
+                        <div class="element__description">
+                            <h2 class="element__text">Карачаевск</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/tyumen.jpg" alt="Фотография
+                            Тюмени">
+                        <div class="element__description">
+                            <h2 class="element__text">Тюмень</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/Dombai.png" alt="Фотография
+                            домбая">
+                        <div class="element__description">
+                            <h2 class="element__text">Домбай</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/bashkortostan.jpg" alt="Фотография
+                            Республики Башкортостан">
+                        <div class="element__description">
+                            <h2 class="element__text">Республика Башкортостан</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/Elbrus.png" alt="Фотография
+                            Эльбруса">
+                        <div class="element__description">
+                            <h2 class="element__text">Эльбрус</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                    <li class="element">
+                        <img class="element__image"
+                            src="./images/kaliningrad.jpg" alt="Фотография
+                            Калининграда">
+                        <div class="element__description">
+                            <h2 class="element__text">Калининград</h2>
+                        </div>
+                        <button class="element__like-button buttons"
+                            type="button"></button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer section section__footer">
+            <p class="footer__copyright">&copy; 2022
+                Mesto
+                Russia</p>
+        </footer>
+
+        <div class="popup popup_type_edit-profile">
+            <div class="popup__content">
+                <button type="button" class="popup__close-button buttons"></button>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form popup__form_profile" name="fio"
+                    novalidate>
+                    <fieldset class="popup__block">
+                        <div class="popup__input-container">
+                            <input type="text" class='popup__input_type_name'
+                                name='name'autofocus value="Жак-Ив Кусто"
+                                placeholder="Имя пользователя" minlength="2"
+                                maxlength="40" required>
+                        </div>
+                        <div class="popup__input-container">
+                            <input type="text" class='popup__input_type_job'
+                                name='job' value="Исследователь океана"
+                                placeholder="Профессия пользователя"
+                                minlength="2" maxlength="200" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="popup__save-button buttons">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="./script/index.js"></script>
+    </body>
+</html>
