@@ -1,8 +1,8 @@
 //Обьявление переменных
 let editButton = document.querySelector(".profile__edit-button");
 let popupElem = document.querySelector(".popup");
-let nameInput = document.querySelector(".popup__input_type_name");
-let jobInput = document.querySelector(".popup__input_type_job");
+let nameInput = document.querySelector(".popup__input-name");
+let jobInput = document.querySelector(".popup__input-job");
 let nameProfile = document.querySelector(".profile__author");
 let StatusProfile = document.querySelector(".profile__author-status");
 let formElem = document.querySelector(".popup_type_edit-profile");
