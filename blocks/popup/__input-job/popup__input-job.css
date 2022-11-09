@@ -1,4 +1,4 @@
-.popup__input_type_name {
+.popup__input-job {
     font-size: 14px;
     line-height: 16.94px;
     border: none;
@@ -7,6 +7,6 @@
     padding: 0 0 9px 0;
 }
 
-.popup__input_type_name:focus {
+.popup__input-job:focus {
     outline: none;
 }
